@@ -1,0 +1,48 @@
+/* Basic styling for the form */
+.editable-creator-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.editable-creator-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.editable-creator-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.editable-creator-form input,
+.editable-creator-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.editable-creator-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1ab79e; /* Mint color for buttons */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.editable-creator-form button:hover {
+  background-color: #0e8f7a; /* Darker mint on hover */
+}
+
+  

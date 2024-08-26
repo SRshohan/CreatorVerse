@@ -1,0 +1,57 @@
+.view-creator-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f0f8f8; /* Very light mint background */
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  .view-creator-container h1 {
+    font-size: 2rem;
+    color: #04756f; /* Dark mint color for the header */
+    margin-bottom: 20px;
+  }
+  
+  .view-creator-container p {
+    font-size: 1rem;
+    color: #333;
+    margin: 20px 0;
+  }
+  
+  .creator-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .action-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1ab79e; /* Mint color for buttons */
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #0e8f7a; /* Darker mint on hover */
+  }
+  
+  .btn-delete {
+    background-color: #e57373; /* Red color for delete button */
+  }
+  
+  .btn-delete:hover {
+    background-color: #c62828; /* Darker red on hover */
+  }
+  
