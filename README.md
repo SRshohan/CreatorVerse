@@ -51,7 +51,5 @@ npm run dev
 ```
 
 6. Demo
-![Home](/src/demo/Screenshot%202024-08-25%20at%2010.58.29 PM.png)
-![ViewAll](/src/demo/Screenshot%202024-08-25%20at%2010.58.36 PM.png)
-![ContentProfile](/src/demo/Screenshot%202024-08-25%20at%2010.58.43 PM.png)
-![Edit](/src/demo/Screenshot%202024-08-25%20at%2010.58.50 PM.png)
+![GIF](/src/demo/giphy.mp4)
+
