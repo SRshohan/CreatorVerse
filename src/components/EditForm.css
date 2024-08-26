@@ -1,0 +1,69 @@
+.creator-form {
+    background: #ffffff; /* White background for the form */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 100%;
+    max-width: 600px; /* Maximum width for the form */
+    margin: 20px auto; /* Center the form horizontally */
+  }
+  
+  .creator-form h1 {
+    font-size: 2rem;
+    color: #04756f; /* Dark mint color for the header */
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .creator-form div {
+    margin-bottom: 15px;
+  }
+  
+  .creator-form label {
+    display: block;
+    font-size: 1rem;
+    color: #333; /* Darker text for readability */
+    margin-bottom: 5px;
+  }
+  
+  .creator-form input[type="text"],
+  .creator-form input[type="url"],
+  .creator-form textarea {
+    width: 100%; /* Full width */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .creator-form input[type="text"]:focus,
+  .creator-form input[type="url"]:focus,
+  .creator-form textarea:focus {
+    border-color: #1ab79e; /* Mint border on focus */
+    outline: none;
+  }
+  
+  .creator-form button {
+    background: linear-gradient(135deg, #1ab79e, #0e8f7a); /* Mint gradient background */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    margin-top: 10px;
+    display: block;
+    width: 100%; /* Full width button */
+  }
+  
+  .creator-form button:hover {
+    background: linear-gradient(135deg, #12a78e, #1a8f77); /* Slightly darker gradient on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  .creator-form button:focus {
+    outline: none;
+  }
+  

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { supabase } from '../client'; // Import your Supabase client
-import CreatorForm from '../components/CreatorForm'; // Reuse the form component
+import EditForm from '../components/EditForm'; // Reuse the form component
 import './EditCreator.css'; // Import the CSS file for styling
 import { toast } from 'react-toastify';
 
@@ -53,7 +53,7 @@ function EditCreator() {
   return (
     <div className="edit-creator-container">
       <h1>Edit Creator</h1>
-      <CreatorForm
+      <EditForm
         formData={formData}
         setFormData={setFormData}
         handleSubmit={handleSubmit}

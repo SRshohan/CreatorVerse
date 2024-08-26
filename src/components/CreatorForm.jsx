@@ -1,25 +1,43 @@
-import React from 'react';
-import './CreatorForm.css'; // Import the CSS file for styling
+import React, { useState } from 'react';
+import { supabase } from '../client'; // Import your Supabase client
+import './CreatorForm.css';
 
-function CreatorForm({ formData, setFormData, handleSubmit }) {
+function CreatorForm() {
+  const [formData, setFormData] = useState({
+    name: '',
+    url: '',
+    description: '',
+    imageURL: ''
+  });
+
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    setFormData({ ...formData, [name]: value });
   };
 
-  const onSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    handleSubmit(formData); // Pass formData to the parent component's handler
+
+    const { data, error } = await supabase
+      .from('creators') // Make sure this matches your Supabase table name
+      .insert([formData]);
+
+    if (error) {
+      console.error('Error:', error);
+    } else {
+      console.log('Success:', data);
+      // Optionally reset form or redirect
+    }
   };
 
   return (
-    <form onSubmit={onSubmit} className="creator-form">
+    <form onSubmit={handleSubmit}>
       <div>
         <label>Name:</label>
         <input
           type="text"
           name="name"
-          value={formData.name || ''} // Ensure value is handled correctly
+          value={formData.name}
           onChange={handleChange}
           required
         />
@@ -29,7 +47,7 @@ function CreatorForm({ formData, setFormData, handleSubmit }) {
         <input
           type="url"
           name="url"
-          value={formData.url || ''} // Ensure value is handled correctly
+          value={formData.url}
           onChange={handleChange}
           required
         />
@@ -38,7 +56,7 @@ function CreatorForm({ formData, setFormData, handleSubmit }) {
         <label>Description:</label>
         <textarea
           name="description"
-          value={formData.description || ''} // Ensure value is handled correctly
+          value={formData.description}
           onChange={handleChange}
           required
         />
@@ -48,11 +66,11 @@ function CreatorForm({ formData, setFormData, handleSubmit }) {
         <input
           type="url"
           name="imageURL"
-          value={formData.imageURL || ''} // Ensure value is handled correctly
+          value={formData.imageURL}
           onChange={handleChange}
         />
       </div>
-      <button type="submit" className="btn">Submit</button>
+      <button type="submit">Submit</button>
     </form>
   );
 }
