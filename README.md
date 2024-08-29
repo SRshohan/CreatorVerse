@@ -53,8 +53,7 @@ npm run dev
 6. Demo
 ![Demo](src/demo/Kapture%202024-08-29%20at%2017.04.23.gif)
 
-- Link
-[GIF](https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWNxdHA5cnE3cWM3M293ajk2Nm5kdGhjdXlsbjlqdHhzanlpc2E3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YRC6exyy5f88GrqQJM/giphy-downsized-large.gif)
+
 
 
 
