@@ -19,14 +19,14 @@ function CreatorForm() {
     e.preventDefault();
 
     const { data, error } = await supabase
-      .from('creators') // Make sure this matches your Supabase table name
+      .from('creators') 
       .insert([formData]);
 
     if (error) {
       console.error('Error:', error);
     } else {
       console.log('Success:', data);
-      // Optionally reset form or redirect
+
     }
   };
 

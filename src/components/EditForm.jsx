@@ -1,5 +1,5 @@
 import React from 'react';
-import './CreatorForm.css'; // Import the CSS file for styling
+import './CreatorForm.css'; 
 
 function EditForm({ formData, setFormData, handleSubmit }) {
   const handleChange = (e) => {
@@ -9,7 +9,7 @@ function EditForm({ formData, setFormData, handleSubmit }) {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    handleSubmit(formData); // Pass formData to the parent component's handler
+    handleSubmit(formData); // Passing formData to the parent component's handler
   };
 
   return (
@@ -19,7 +19,7 @@ function EditForm({ formData, setFormData, handleSubmit }) {
         <input
           type="text"
           name="name"
-          value={formData.name || ''} // Ensure value is handled correctly
+          value={formData.name || ''} 
           onChange={handleChange}
           required
         />
@@ -29,7 +29,7 @@ function EditForm({ formData, setFormData, handleSubmit }) {
         <input
           type="url"
           name="url"
-          value={formData.url || ''} // Ensure value is handled correctly
+          value={formData.url || ''} 
           onChange={handleChange}
           required
         />
@@ -38,7 +38,7 @@ function EditForm({ formData, setFormData, handleSubmit }) {
         <label>Description:</label>
         <textarea
           name="description"
-          value={formData.description || ''} // Ensure value is handled correctly
+          value={formData.description || ''} 
           onChange={handleChange}
           required
         />
@@ -48,7 +48,7 @@ function EditForm({ formData, setFormData, handleSubmit }) {
         <input
           type="url"
           name="imageURL"
-          value={formData.imageURL || ''} // Ensure value is handled correctly
+          value={formData.imageURL || ''} 
           onChange={handleChange}
         />
       </div>

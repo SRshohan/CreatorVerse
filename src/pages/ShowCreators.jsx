@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { supabase } from '../client'; // Import your Supabase client
-import './ShowCreators.css'; // Import the CSS file for styling
+import { supabase } from '../client'; 
+import './ShowCreators.css'; 
 
 function ShowCreators() {
   const [creators, setCreators] = useState([]);

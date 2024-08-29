@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { supabase } from '../client'; // Import your Supabase client
-import './ViewCreator.css'; // Import the CSS file for styling
+import { supabase } from '../client'; 
+import './ViewCreator.css'; 
 
 function ViewCreator() {
   const { id } = useParams();
